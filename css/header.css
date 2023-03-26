@@ -1,0 +1,293 @@
+header{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 5px 7%;
+
+    transition: background-color .5s;
+
+    z-index: 100;
+}
+
+header .logo-header{
+    flex: 1 1 35%;
+    transition: all 1s;
+}
+
+header nav{
+    flex: 1 1 75%;
+    transition: all 1s;
+}
+
+header .logo-header .logo{
+    margin: 0;
+    color: #000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.logo span{
+    font-size: 1.4em;
+    align-self: flex-start;
+    color: #f33;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    font-size: .8rem;
+    font-weight: 500;
+    color: #222;
+    height: 100%;
+    transition: color .5s;
+}
+
+
+.menu-item{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.menu .menu-item:first-child{
+    color: #444;
+}
+
+.menu .menu-item{
+    position: relative;
+    padding: 0 10px;
+    height: 100%;
+}
+
+.icon-bg{
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+}
+
+.name-menu-item.search{
+    display: inline-block;
+    width: .5rem;
+    height: 50%;
+    background: url('../icon/search-icon.png');
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position: center center;
+    background-clip: padding-box;
+    background-origin: padding-box;
+    border-left: 1px solid #bbb;
+    padding-left: 70px;
+}
+
+
+.name-menu-item.search:hover{
+    background-image: url('../icon/search-icon_hover.png');
+}
+
+
+.desplegable-menu-item{
+    opacity: 0;
+    position: absolute;
+    font-size: 1.3em;
+    color: #999;
+    bottom: 0;
+    left: 50%;
+    translate: -50% 100%;
+    transition: opacity .7s;
+    background-color: #000;
+    cursor: default;
+    width: max-content;
+    padding: 30px 50px;
+
+}
+
+.menu-desplegable{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    flex-direction: column;
+    
+}
+
+.desplegable-menu-item.visible, .desplegable-menu-item:hover{
+    opacity: 1;
+}
+
+.menu-desplegable li{
+    margin: 10px 0;
+}
+
+.menu-desplegable li a{
+    color: inherit;
+    text-decoration: none;
+    transition: padding .5s;
+}
+
+.menu-desplegable li a:hover{
+    color: #fff;
+    padding-left: 8px;
+}
+
+header.down{
+    background-color: #111;
+}
+
+header.down .menu{
+    color: #fff;
+    height: calc(10px + 2rem);
+}
+
+header.down .menu .menu-item:first-child{
+    color: #bbb;
+}
+
+header.down .logo-header{
+    /* transform: translateX(100%) scale(0); */
+    flex: 1 1 0%;
+    height: calc(10px + 2rem);
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+header.down nav{
+    transform: translateX(-10%);
+}
+
+header.down nav .menu-item .search{
+    background-image: url("../icon/search-icon-down.png");
+}
+
+header.down nav .menu-item .search:hover{
+    background-image: url("../icon/search-icon-down_hover.png");
+}
+
+header.responsive{
+    display: none;
+}
+
+header.responsive{
+    background-color: #000;
+    position: fixed;
+    transform: translateY(-100%);
+    padding: 0;
+    transition: transform .3s;
+}
+
+header.responsive.visible{
+    transform: translateY(0);
+}
+
+header.responsive .logo{
+    color: #fff;
+    padding: 5px 50px;
+}
+
+header.responsive .buttons-menu{
+    display: flex;
+    align-items: center;
+}
+
+header.responsive .buttons-menu > span{
+    height: 100%;
+}
+
+header.responsive > div{
+    position: relative;
+    z-index: inherit;
+    background-color: inherit;
+}
+
+header.responsive nav{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    background-color: #000;
+}
+
+header.responsive nav .menu-item{
+    color: #fff;
+    padding: 10px 0;
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 12px;
+    transition: all .5s;
+}
+
+
+header.responsive nav .menu-item .arrow{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+
+    background-image: url("../icon/go-up.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+    right: 10%;
+    transition: transform .5s;
+}
+
+header.responsive nav .menu-item:hover{
+    transition: all .5s;
+    height: 100px;
+}
+
+header.responsive nav .menu-item:hover .arrow{
+    transform: translateY(-50%) rotate(0deg);
+}
+
+header.responsive .menu-item .desplegable-menu-item{
+    position: static;
+    top: 0;
+    left: 0;
+    translate: 0;
+    padding: 0;
+    scale: 0;
+}
+
+header.responsive .menu-item .desplegable-menu-item.visible{
+    position: static;
+    scale: 1;
+}
+
+header.responsive nav .menu-item:first-child{
+    color: #bbb;
+}
+
+header.responsive nav.active{
+    transform: translateY(100%);
+}
+
+header.responsive .menu{
+    flex-direction: column;
+}
+
+header.responsive .search{
+    background-image: url("../icon/search-icon-down_hover.png");
+}
+
+header.responsive .menu-responsive{
+    display: inline-block;
+    width: .5rem;
+    height: 100%;
+    padding-left: 70px;
+    background-image: url("../icon/menu.png");
+    background-repeat: no-repeat;
+    background-size: 25%;
+}

@@ -1,0 +1,34 @@
+{
+    "works":[
+        { 
+            "img" : "https://pofo.themezaa.com/wp-content/uploads/2017/08/portfolio-item27.jpg.webp",
+            "title" : "HERBAL BEAUTY SALON",
+            "short_description" : "BRANDING AND IDENTITY"
+        },
+        { 
+            "img" : "https://pofo.themezaa.com/wp-content/uploads/2017/08/portfolio-item29.jpg.webp",
+            "title" : "TAILORING INTERIOR",
+            "short_description" : "BRANDING AND BROCHURE"
+        },
+        { 
+            "img" : "https://pofo.themezaa.com/wp-content/uploads/2017/08/portfolio-item28.jpg.webp",
+            "title" : "DESIGNBLAST INC",
+            "short_description" : "WEB AND PHOTOGRAPHY"
+        },
+        { 
+            "img" : "https://pofo.themezaa.com/wp-content/uploads/2017/08/portfolio-item30.jpg.webp",
+            "title" : "HARDDOT STONE",
+            "short_description" : "BRANDING AND IDENTITY"
+        },
+        { 
+            "img" : "https://pofo.themezaa.com/wp-content/uploads/2017/08/portfolio-item31.jpg.webp",
+            "title" : "CROP IDENTITY",
+            "short_description" : "BRANDING AND BROCHURE"
+        },
+        { 
+            "img" : "https://pofo.themezaa.com/wp-content/uploads/2017/08/portfolio-item32.jpg.webp",
+            "title" : "VIOLATOR SERIES",
+            "short_description" : "WEB AND PHOTOGRAPHY"
+        }
+    ]
+}

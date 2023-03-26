@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/header.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <title>Layout Grid</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo-header">
+        <h1 class="logo">POFO<span>*</span></h1>
+      </div>
+
+      <nav>
+        <ul class="menu">
+          <li class="menu-item">
+            <span class="name-menu-item">HOME</span>
+            <div class="desplegable-menu-item">
+              <ul class="menu-desplegable">
+                <li><a href="#">Classic Home Page</a></li>
+                <li><a href="#">Classic Corporate</a></li>
+                <li><a href="#">Classic Digital Agency</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu-item">
+            <span class="name-menu-item">PORTFOLIO</span>
+            <div class="desplegable-menu-item">
+              <ul class="menu-desplegable">
+                <li><a href="#">Classic Home Page</a></li>
+                <li><a href="#">Classic Corporate</a></li>
+                <li><a href="#">Classic Digital Agency</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu-item">
+            <span class="name-menu-item">BLOG</span>
+            <div class="desplegable-menu-item">
+              <ul class="menu-desplegable">
+                <li><a href="#">Classic Home Page</a></li>
+                <li><a href="#">Classic Corporate</a></li>
+                <li><a href="#">Classic Digital Agency</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu-item">
+            <span class="name-menu-item">ELEMENTS</span>
+            <div class="desplegable-menu-item">
+              <ul class="menu-desplegable">
+                <li><a href="#">Classic Home Page</a></li>
+                <li><a href="#">Classic Corporate</a></li>
+                <li><a href="#">Classic Digital Agency</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu-item">
+            <span class="name-menu-item">FEATURES</span>
+            <div class="desplegable-menu-item">
+              <ul class="menu-desplegable">
+                <li><a href="#">Classic Home Page</a></li>
+                <li><a href="#">Classic Corporate</a></li>
+                <li><a href="#">Classic Digital Agency</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu-item">
+            <span class="name-menu-item icon-bg search"></span>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <header class="responsive">
+      <div class="logo-header">
+        <h1 class="logo">POFO<span>*</span></h1>
+      </div>
+
+      <div class="buttons-menu">
+          <span class="name-menu-item icon-bg menu-responsive"></span>
+          <span class="name-menu-item icon-bg search"></span>
+      </div>
+
+      <nav>
+        <ul class="menu">
+          <li class="menu-item">
+            <span class="name-menu-item">HOME</span>
+            <div class="desplegable-menu-item">
+              <ul class="menu-desplegable">
+                <li><a href="#">Classic Home Page</a></li>
+                <li><a href="#">Classic Corporate</a></li>
+                <li><a href="#">Classic Digital Agency</a></li>
+              </ul>
+            </div>
+            <span class="arrow"></span>
+          </li>
+          <li class="menu-item">
+            <span class="name-menu-item">PORTFOLIO</span>
+            <div class="desplegable-menu-item">
+              <ul class="menu-desplegable">
+                <li><a href="#">Classic Home Page</a></li>
+                <li><a href="#">Classic Corporate</a></li>
+                <li><a href="#">Classic Digital Agency</a></li>
+              </ul>
+            </div>
+            <span class="arrow"></span>
+          </li>
+          <li class="menu-item">
+            <span class="name-menu-item">BLOG</span>
+            <div class="desplegable-menu-item">
+              <ul class="menu-desplegable">
+                <li><a href="#">Classic Home Page</a></li>
+                <li><a href="#">Classic Corporate</a></li>
+                <li><a href="#">Classic Digital Agency</a></li>
+              </ul>
+            </div>
+            <span class="arrow"></span>
+          </li>
+          <li class="menu-item">
+            <span class="name-menu-item">ELEMENTS</span>
+            <div class="desplegable-menu-item">
+              <ul class="menu-desplegable">
+                <li><a href="#">Classic Home Page</a></li>
+                <li><a href="#">Classic Corporate</a></li>
+                <li><a href="#">Classic Digital Agency</a></li>
+              </ul>
+            </div>
+            <span class="arrow"></span>
+          </li>
+          <li class="menu-item">
+            <span class="name-menu-item">FEATURES</span>
+            <div class="desplegable-menu-item">
+              <ul class="menu-desplegable">
+                <li><a href="#">Classic Home Page</a></li>
+                <li><a href="#">Classic Corporate</a></li>
+                <li><a href="#">Classic Digital Agency</a></li>
+              </ul>
+            </div>
+            <span class="arrow"></span>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="layout">
+      <section id="main">
+        <div class="main-content center" bg="../images/main1.jpg">
+          <div class="main-contain">
+            <h1>We always stay on the cutting edge of digital</h1>
+            <p>
+              Everithing you could possibly want it to do and not only that
+              beautifully carefully designed
+            </p>
+            <div class="buttons-link">
+              <a href="#" class="button-link opaque" id="button-link-demo"
+                >Explore demo</a
+              >
+              <a href="#" class="button-link" id="button-link-download"
+                >Download now</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="main-content right" bg="../images/main2.jpg">
+          <div class="main-contain">
+            <h1>We always stay on the cutting edge of digital</h1>
+            <p>
+              Everithing you could possibly want it to do and not only that
+              beautifully carefully designed
+            </p>
+            <div class="buttons-link">
+              <a href="#" class="button-link opaque" id="button-link-demo"
+                >Explore demo</a
+              >
+              <a href="#" class="button-link" id="button-link-download"
+                >Download now</a
+              >
+            </div>
+          </div>
+        </div>
+       
+        <div class="main-content left" bg="../images/main3.jpg">
+          <div class="main-contain">
+            <h1>We always stay on the cutting edge of digital</h1>
+            <p>
+              Everithing you could possibly want it to do and not only that
+              beautifully carefully designed
+            </p>
+            <div class="buttons-link">
+              <a href="#" class="button-link opaque" id="button-link-demo"
+                >Explore demo</a
+              >
+              <a href="#" class="button-link" id="button-link-download"
+                >Download now</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="buttons-image-container">
+          <span class="button-image focus"></span>
+          <span class="button-image"></span>
+          <span class="button-image"></span>
+        </div>
+      </section>
+
+      <section id="modules">
+        <div class="modul">
+          <div class="top-modul">
+            <span class="number-modul">01.</span>
+            <h2 class="title-modul">Creativity.<br />Discover talent</h2>
+          </div>
+          <div class="description-modul">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry’s standard dummy text
+              ever since. Lorem Ipsum has been the industry.
+            </p>
+          </div>
+        </div>
+
+        <div class="modul">
+          <div class="top-modul">
+            <span class="number-modul">02.</span>
+            <h2 class="title-modul">Technology.<br />Expert analysis</h2>
+          </div>
+          <div class="description-modul">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry’s standard dummy text
+              ever since. Lorem Ipsum has been the industry.
+            </p>
+          </div>
+        </div>
+
+        <div class="modul">
+          <div class="top-modul">
+            <span class="number-modul">03.</span>
+            <h2 class="title-modul">Discover.<br />Explore work.</h2>
+          </div>
+          <div class="description-modul">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry’s standard dummy text
+              ever since. Lorem Ipsum has been the industry.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="who">
+        <div class="image-big">
+          <img src="images/who-bg.jpg" />
+        </div>
+        <div class="who-content">
+          <h1>We are delivering beautiful digital products for you</h1>
+          <div class="who-content-modules">
+            <div class="who-contain-modules">
+              <span class="icon"><img src="icon/monitor.png" /></span>
+              <div class="who-modul">
+                <h3 class="who-modul-title">Elegant / Unique design</h3>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry’s
+                  standard dummy text ever since.
+                </p>
+              </div>
+            </div>
+            <div class="who-contain-modules">
+              <span class="icon"><img src="/icon/labels.png" /></span>
+              <div class="who-modul">
+                <h3 class="who-modul-title">Different Layout Type</h3>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry’s
+                  standard dummy text ever since.
+                </p>
+              </div>
+            </div>
+            <div class="who-contain-modules">
+              <span class="icon"><img src="icon/comments.png" /></span>
+              <div class="who-modul">
+                <h3 class="who-modul-title">Make it Simple</h3>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry’s
+                  standard dummy text ever since.
+                </p>
+              </div>
+            </div>
+            <div class="who-contain-modules">
+              <span class="icon"><img src="icon/devices.png" /></span>
+              <div class="who-modul">
+                <h3 class="who-modul-title">True Responsiveness</h3>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry’s
+                  standard dummy text ever since.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="stadistics">
+        <div class="stadistic-content">
+          <span class="icon-svg" d="M18,4c-4-1-6,3-6,3s-2-4-6-3s-4,6-2,8l8,8l8-8C22,10,22,5,18,4z" start-color="#fff" end-color="#f00" nameIcon="heart"></span>
+          <div class="stadistic-contain">
+            <span class="number-stadistic">4650</span>
+            <h4 class="stadistic-title">Happy Clients</h4>
+          </div>
+        </div>
+
+        <div class="stadistic-content">
+            <span class="icon-svg" d="M23,17l-4-1c1.1,0,2-.9,2-2V7c0-1.1-.9-2-2-2H5c-1.1,0-2,.9-2,2v7c0,1.1.9,2,2,2l-4,1c0,1,1,2,2,2h18c1,0,2-1,2-2zM5.3,15c-.7,0-1.3-.6-1.3-1.3V7.3C4,6.6,4.6,6,5.3,6h13.4c.7,0,1.3.6,1.3,1.3v6.5c0,.7-.6,1.3-1.3,1.3H5.3z" start-color="#fff" end-color="#E370DA" nameIcon="laptop"></span>
+          <div class="stadistic-contain">
+            <span class="number-stadistic">3790</span>
+            <h4 class="stadistic-title">Project Completed</h4>
+          </div>
+        </div>
+
+        <div class="stadistic-content">
+          <span class="icon-svg" d="M19,7l-2-2H7L5,7H2v12h20V7h-3zm-7,10c-2.8,0-5-2.2-5-5s2.2-5,5-5,5,2.2,5,5-2.2,5-5,5z" start-color="#fff" end-color="#5f5" nameIcon="camera"></span>
+          <div class="stadistic-contain">
+            <span class="number-stadistic">5580</span>
+            <h4 class="stadistic-title">Photo Capture</h4>
+          </div>
+        </div>
+
+        <div class="stadistic-content">
+          <span class="icon-svg" d="M12,4C5.37,4,0,7.13,0,11c0,1.77,1.14,3.39,3,4.62V21l5.51-3.3c1.1.19,2.27.3,3.49.3,6.63,0,12-3.13,12-7s-5.37-7-12-7z" start-color="#fff" end-color="#55f" nameIcon="telephonic"></span>
+          <div class="stadistic-contain">
+            <span class="number-stadistic">8580</span>
+            <h4 class="stadistic-title">Telephonic Talk</h4>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="title-projects">
+          <h4>OUR RECENT WORKS</h4>
+          <h1>New stunning projects for our amazing clients</h1>
+        </div>
+
+        <div class="works">
+
+        </div>
+
+      </section>
+    </section>
+
+    <div id="modal">
+      <div id="modal-images" style="display: none;">
+        <span class="arrow previous"></span>
+        <div>
+          <img class="current-image" src=""/>
+          <div>
+            <span class="name-current-image"></span>
+            <span><span class="number-current-image"></span> of <span class="length-images"></span></span>
+          </div>
+        </div>
+        <span class="arrow next"></span>
+      </div>
+
+      <div id="modal-search" style="display: none;">
+        <form action="index.html" method="get">
+          <input type="text" id="search" name="search" placeholder="Enter your keywords..."/>
+          <button type="submit"></button>
+        </form>
+      </div>
+
+      <span class="close-modal"></span>
+    </div>
+
+    
+
+    <a href="#" id="go-up"></a>
+
+    <aside>
+      <a href="https://www.instagram.com/daniieelgs/" target="_blank"><span class="icon-item-slide"><img src="images/instagram-logo.webp"/></span>Instagram</a>
+      <a href="https://api.whatsapp.com/send/?phone=640246920" target="_blank"><span class="icon-item-slide"><img src="images/WhatsApp.svg.webp"/></span>WhatsApp</a>
+      <a href="mailto:daniieelgs@gmail.com" target="_blank"><span class="icon-item-slide"><img src="images/mail.png"/></span>Mail</a>
+    </aside>
+
+    <script src="js/script.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/slide.js"></script>
+    <script src="js/svg_animation.js"></script>
+    <script src="js/works.js"></script>
+  </body>
+</html>
